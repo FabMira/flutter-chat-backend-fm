@@ -25,6 +25,8 @@ app.use( express.static( publicPath ) );
 
 // Mis rutas
 app.use( '/api/login', require('./routes/auth') );
+app.use( '/api/users', require('./routes/usuarios') );
+app.use( '/api/mensajes', require('./routes/mensajes.js') );
 
 
 server.listen( process.env.PORT, ( err ) => {
